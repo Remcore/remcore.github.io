@@ -131,7 +131,7 @@ body{
 
 .slider{
     margin-top:20px;
-    height: 204px;
+    
     width: 100%;
     
    
@@ -193,22 +193,28 @@ body{
     
 }
 .slider-body{
-    width: 100000px;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    .hide {
+        display: none;
+    }
 }
 
 .slide{
     background-color: #fff;
-    width:123px;
-    display: inline-block;
-    position: relative;
-    transition: 1s ease-in;
+    padding: 0 5px;
+    width: 150px;
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     .item-image{
         img{
-            width: 123px;
+            position: relative;
+            width: 100%;
         }
         .sale{
             background-color: @base-color;
@@ -226,7 +232,7 @@ body{
         font-size:18px;
         text-align: center;
         padding-bottom: 20px;
-
+        display: grid;
         .btn-read-more{
             background-color: transparent;
             border-color: #d9d9d9;
@@ -241,6 +247,104 @@ body{
         }
     }
 }
+
+
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: black;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: @base-color;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: black;
+    outline: none;
+    background: @base-color - 10%;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 0.5;
+
+    opacity: .75;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '‹';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '›';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '›';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '‹';
+}
+
 
 .contetn{
     margin-top: 20px;
@@ -584,6 +688,3 @@ footer{
 
 
 }
-
-
-
