@@ -137,6 +137,7 @@ $('.slider').slick({
   slidesToShow: 6,
   slidesToScroll: 4,
   infinite: true,
+  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 1025,
