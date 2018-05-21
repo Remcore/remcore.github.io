@@ -136,13 +136,13 @@ function setCookie(name, value, options) {
 $('.slider').slick({
   slidesToShow: 6,
   slidesToScroll: 4,
+  infinite: true,
   responsive: [
     {
       breakpoint: 1025,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 3,
-        infinite: true,
+        slidesToScroll: 3
       }
     },
     {
@@ -156,7 +156,7 @@ $('.slider').slick({
     {
       breakpoint: 425,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 2,
         arrows: false
       }
@@ -172,7 +172,7 @@ $('.slider').slick({
     {
       breakpoint: 325,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false
       }
