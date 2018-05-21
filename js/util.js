@@ -138,7 +138,7 @@ $('.slider').slick({
   slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1025,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 3,
@@ -146,7 +146,7 @@ $('.slider').slick({
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 769,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 2,
@@ -162,7 +162,7 @@ $('.slider').slick({
       }
     },
     {
-      breakpoint: 375,
+      breakpoint: 376,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -170,7 +170,7 @@ $('.slider').slick({
       }
     },
     {
-      breakpoint: 320,
+      breakpoint: 325,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
